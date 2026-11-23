@@ -1,0 +1,15 @@
+<Window x:Class="CrosshairStudio.NameDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Сохранить пресет" Height="180" Width="340"
+        WindowStartupLocation="CenterOwner" ResizeMode="NoResize"
+        Background="#191F29" Foreground="#F1F5F9">
+    <StackPanel Margin="18">
+        <TextBlock Text="Название пресета" Margin="0,0,0,8"/>
+        <TextBox x:Name="NameBox" Text="My crosshair"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Отмена" Click="Cancel_Click"/>
+            <Button Content="Сохранить" Background="#267A50" Click="Save_Click" Margin="8,5,0,5"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

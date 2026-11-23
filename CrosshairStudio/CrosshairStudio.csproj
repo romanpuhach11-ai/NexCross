@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <!-- Нужен ТОЛЬКО для иконки в трее (NotifyIcon) и списка мониторов (Screen). -->
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>CrosshairStudio</AssemblyName>
+    <Version>1.0.0</Version>
+    <!-- Манифест включает правильную работу с DPI (масштаб 125%/150% и несколько мониторов). -->
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <!-- WinForms и WPF имеют классы с одинаковыми именами (Button, Application, Color...).
+       Эти две строки убирают автоматический импорт WinForms, чтобы не было конфликтов. -->
+  <ItemGroup>
+    <Using Remove="System.Windows.Forms" />
+    <Using Remove="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\launcher.png" />
+  </ItemGroup>
+</Project>

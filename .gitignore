@@ -1,0 +1,6 @@
+artifacts/
+publish/
+release/
+bin/
+obj/
+.vs/
