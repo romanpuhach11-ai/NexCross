@@ -1,0 +1,12 @@
+<Application x:Class="CrosshairStudio.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             ShutdownMode="OnExplicitShutdown">
+    <Application.Resources>
+        <SolidColorBrush x:Key="BackgroundBrush" Color="#101319"/>
+        <SolidColorBrush x:Key="PanelBrush" Color="#191F29"/>
+        <SolidColorBrush x:Key="AccentBrush" Color="#58D68D"/>
+        <SolidColorBrush x:Key="TextBrush" Color="#F1F5F9"/>
+        <SolidColorBrush x:Key="MutedBrush" Color="#9AA7B7"/>
+    </Application.Resources>
+</Application>

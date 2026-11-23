@@ -1,0 +1,36 @@
+<Window x:Class="CrosshairStudio.LauncherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Crosshair Studio Launcher"
+        Height="360" Width="560"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None" ResizeMode="NoResize"
+        AllowsTransparency="True" Background="Transparent">
+    <Border x:Name="LauncherRoot" Background="#101319" BorderBrush="#354254"
+            BorderThickness="1" CornerRadius="18" Padding="28" Opacity="0">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <TextBlock Text="CROSSHAIR STUDIO" FontSize="28" FontWeight="Bold" Foreground="#F1F5F9"/>
+                <TextBlock Text="1.0" Foreground="#58D68D" FontSize="13" FontWeight="SemiBold" Margin="0,6,0,0"/>
+            </StackPanel>
+            <Border Grid.Row="1" Width="86" Height="86" CornerRadius="43"
+                    Background="#1B3028" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Ellipse x:Name="LauncherMark" Width="30" Height="30" Fill="#58D68D"
+                         HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Выход" Width="110" Height="38" Margin="0,0,10,0"
+                        Background="#273241" Foreground="#F1F5F9" BorderThickness="0"
+                        Click="Exit_Click"/>
+                <Button Content="Запустить" Width="150" Height="38"
+                        Background="#267A50" Foreground="#F1F5F9" BorderThickness="0"
+                        FontWeight="SemiBold" Click="Launch_Click"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
